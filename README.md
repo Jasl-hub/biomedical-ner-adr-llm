@@ -71,8 +71,19 @@ This project focuses on extracting biomedical named entities such as **Drugs**, 
   ]
 }
 ``` 
+## 📁 Project Structure 
 
-## 📁 Project Structure
+<pre><code>
+  ├── nlp_assignment.py # Main ADR extraction pipeline script 
+  ├── entities_by_file.json # Extracted entities per file 
+  ├── normalized_adr_results.json # ADRs normalized to SNOMED codes 
+  ├── fuzzy_adr_matches.json # Fuzzy match results for ADRs 
+  ├── embedding_adr_matches.json # Embedding-based ADR matches 
+  ├── venn.png # Venn diagram: fuzzy vs embedding matches 
+  ├── bar.png # Bar chart visualization of match results 
+  ├── pie.png # Pie chart of match types 
+  ├── README.md # Project documentation (this file) 
+  </code></pre>
 
 
 ---
@@ -99,9 +110,10 @@ Model performance was evaluated using:
 
 ## 💡 Future Improvements
 
-- Fine-tune biomedical LLMs like **BioGPT** or **SciBERT** for improved tagging accuracy  
-- Detect temporal and causal relations in ADR mentions  
-- Integrate with annotation tools (e.g., brat, doccano) for real-time labeling  
+- Fine-tune biomedical LLMs like **BioGPT** or **SciBERT** for improved tagging accuracy    
+- Integrate with annotation tools (e.g., brat, doccano) for real-time labeling
+- Deploy the pipeline as a REST API using FastAPI or Flask for integration with healthcare systems
+- Build a Streamlit dashboard or Gradio UI for interactive exploration and verification of extracted ADRs
 
 ---
 
