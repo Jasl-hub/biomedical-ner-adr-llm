@@ -70,3 +70,57 @@ This project focuses on extracting biomedical named entities such as **Drugs**, 
     }
   ]
 }
+``` 
+
+## 📁 Project Structure
+
+
+---
+
+## 📈 Evaluation
+
+Model performance was evaluated using:
+
+- Ground truth annotations from `original/` and `meddra/`
+- Entity-level comparison across:
+  - ✅ Exact String Match
+  - ✅ Fuzzy String Matching (via FuzzyWuzzy)
+  - ✅ Embedding Similarity (via Sentence Transformers)
+
+---
+
+## 📊 Visualizations
+
+- `venn.png`: Overlap between fuzzy and embedding-based matches  
+- `bar.png`: Distribution of ADR match types  
+- `pie.png`: Proportion of exact, fuzzy, and embedding-based matches  
+
+---
+
+## 💡 Future Improvements
+
+- Fine-tune biomedical LLMs like **BioGPT** or **SciBERT** for improved tagging accuracy  
+- Detect temporal and causal relations in ADR mentions  
+- Integrate with annotation tools (e.g., brat, doccano) for real-time labeling  
+
+---
+
+## 🙋‍♀️ Author
+
+**Jasleen Kaur**  
+M.Tech (ESC), NIT Rourkela  
+[LinkedIn](https://www.linkedin.com/in/jas03leen/) | [GitHub](https://github.com/Jasl-hub)
+
+---
+
+## 📜 License
+
+This project is intended for **educational and research purposes only**.  
+All rights to the CADEC dataset belong to **CSIRO, Australia**.
+
+---
+
+## 📬 Contact
+
+For questions, suggestions, or collaboration inquiries, feel free to open an issue or reach out on [LinkedIn](https://www.linkedin.com/in/jas03leen/).
+
